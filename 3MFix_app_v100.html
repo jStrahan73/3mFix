@@ -1295,7 +1295,7 @@ function showModal(which){
       <div class="div"></div>
       <div class="sttl">Step 2 — Options</div>
       <p class="btxt">Enable the options you want, then tap Process.</p>
-      ${['Change Printer Data — replace the file's printer config with a saved one','Remove Printer Data — strip all printer settings from the file','Remove Filament Data — strip all filament settings','Remove Process Data — strip all process/print settings','Remove All Data — strip everything at once'].map(o=>`<div class="fitem"><span>•</span><span>${o}</span></div>`).join('')}
+      ${['Change Printer Data — replace the file\'s printer config with a saved one','Remove Printer Data — strip all printer settings from the file','Remove Filament Data — strip all filament settings','Remove Process Data — strip all process/print settings','Remove All Data — strip everything at once'].map(o=>`<div class="fitem"><span>•</span><span>${o}</span></div>`).join('')}
       <div class="div"></div>
       <div class="sttl">Action Buttons</div>
       ${['▶ Process — apply your selected options and rebuild the file','📄 Report — inspect all extracted data before processing','↺ Reset — discard everything and return to file selection','⟳ Restore — revert the file to its original settings using the automatic backup'].map(o=>`<div class="fitem"><span>•</span><span>${o}</span></div>`).join('')}
