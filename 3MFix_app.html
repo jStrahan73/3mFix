@@ -57,9 +57,12 @@ body.light .blob-br{background:rgba(0,191,255,.07);}
 .hdr{display:flex;align-items:center;gap:8px;padding:56px 16px 16px;border-bottom:1px solid rgba(138,43,226,.3);background:inherit;}
 @media(max-width:479px){.hdr{padding-top:20px;}}
 body.light .hdr{border-color:rgba(138,43,226,.2);}
-.logo{flex:1;font-size:22px;font-weight:900;letter-spacing:2px;
+.logo{flex:1;display:flex;flex-direction:column;gap:2px;}
+.logo-name{font-size:22px;font-weight:900;letter-spacing:2px;
   background:linear-gradient(90deg,#8A2BE2,#00BFFF,#FF1493);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.logo-ver{font-size:10px;font-weight:500;letter-spacing:1px;color:#9AA2B5;-webkit-text-fill-color:#9AA2B5;}
+body.light .logo-ver{color:#6B7280;-webkit-text-fill-color:#6B7280;}
 .hbtn{width:44px;height:44px;border-radius:8px;background:rgba(20,20,20,.8);
   border:1px solid rgba(138,43,226,.3);display:flex;align-items:center;justify-content:center;
   cursor:pointer;color:#fff;font-size:18px;flex-shrink:0;transition:background .3s,color .3s;
@@ -280,7 +283,7 @@ body.light .faqa{color:#6B7280;}
     <div class="island"></div>
     <div class="scroll">
       <div class="hdr">
-        <div class="logo">3MFix</div>
+        <div class="logo"><span class="logo-name">3MFix</span><span class="logo-ver">v1.0.0</span></div>
         <div class="hbtn" id="settingsBtn">⚙</div>
       </div>
       <div class="inner">
